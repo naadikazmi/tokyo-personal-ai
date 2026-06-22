@@ -1,0 +1,40 @@
+{
+  "name": "personal-ai-assistant",
+  "version": "1.0.0",
+  "description": "Tokyo Personal AI browser and Windows desktop assistant.",
+  "author": "Tokyo Personal AI",
+  "main": "index.ts",
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@supabase/supabase-js": "^2.108.1",
+    "expo": "~56.0.12",
+    "expo-status-bar": "~56.0.0",
+    "pdfjs-dist": "^6.0.227",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.85.3",
+    "react-native-url-polyfill": "^3.0.0",
+    "react-native-web": "^0.21.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "electron": "^42.4.1",
+    "electron-builder": "^26.15.3",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start",
+    "start:web": "expo start --web --port 8082",
+    "start:api": "node server/index.js",
+    "api": "node server/index.js",
+    "dev": "node server/dev.js",
+    "build:web": "expo export --platform web --output-dir dist",
+    "desktop:dev": "node desktop/start-dev.js",
+    "desktop:build": "node scripts/desktop-build.js build",
+    "desktop:pack": "node scripts/desktop-build.js pack",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web --port 8082"
+  },
+  "private": true
+}

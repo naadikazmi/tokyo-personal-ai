@@ -1,0 +1,3 @@
+-- Authoritative schema for Tokyo Personal AI:
+-- Run supabase/migrations/20260620_personal_ai_core.sql in the Supabase SQL editor.
+-- This file is intentionally kept as a pointer so stale table definitions do not drift from migrations.

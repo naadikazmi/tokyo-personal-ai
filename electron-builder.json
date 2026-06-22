@@ -1,0 +1,30 @@
+{
+  "appId": "com.tokyo.personalai",
+  "productName": "Tokyo Personal AI",
+  "directories": {
+    "output": "release"
+  },
+  "files": [
+    "desktop/**/*",
+    "server/**/*",
+    "dist/**/*",
+    "assets/**/*",
+    "package.json"
+  ],
+  "extraMetadata": {
+    "main": "desktop/main.js"
+  },
+  "win": {
+    "target": [
+      "nsis",
+      "dir"
+    ]
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Tokyo Personal AI"
+  }
+}
